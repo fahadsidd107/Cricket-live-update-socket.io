@@ -9,7 +9,7 @@ import { Server } from "socket.io";
 const PORT = process.env.PORT || 5000
 const app = express()
 
-mongoose.connect('mongodb+srv://admin:admin@cluster0.t5qza.mongodb.net/Cricket?retryWrites=true&w=majority');
+mongoose.connect('mongodb+srv://admin:admin@cluster0.crcc2.mongodb.net/fahad_login?retryWrites=true&w=majority');
 
 const Score = mongoose.model('MatchRecord', {
     tournament: String,

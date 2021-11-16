@@ -136,7 +136,7 @@ function Login() {
                             id="outlined-basic"
                             label="Tournament"
                             placeholder="tournament"
-                            variant="filled"
+                            variant="outlined"
                             name="tournament"
                             value={formik.values.tournament}
                             onChange={formik.handleChange}
@@ -147,10 +147,10 @@ function Login() {
                     <Grid item xl={5} lg={2} xs={12} sm={12} md={12} >
                         <Item>     <TextField sx={{ width: "100%" }}
                             color="primary"
-                            id="filled-basic"
+                            id="outlined-basic"
                             label="Date"
                             placeholder="date"
-                            variant="filled"
+                            variant="outlined"
                             type="text"
                             name="matchDate"
                             value={formik.values.matchDate}
@@ -164,16 +164,16 @@ function Login() {
                             <center>
                                 <TextField sx={{ width: "40%" }}
                                     color="primary"
-                                    id="filled-basic"
-                                    label="innings"
-                                    placeholder="innings"
-                                    variant="filled"
+                                    id="outlined-basic"
+                                    label="inning"
+                                    placeholder="inning"
+                                    variant="outlined"
                                     type="text"
-                                    name="innings"
-                                    value={formik.values.innings}
+                                    name="inning"
+                                    value={formik.values.inning}
                                     onChange={formik.handleChange}
-                                    error={formik.touched.innings && Boolean(formik.errors.innings)}
-                                    helperText={formik.touched.innings && formik.errors.innings}
+                                    error={formik.touched.inning && Boolean(formik.errors.inning)}
+                                    helperText={formik.touched.inning && formik.errors.inning}
                                 />
                             </center></Item>
                     </Grid>
@@ -181,10 +181,10 @@ function Login() {
                         <Item>
                             <TextField sx={{ width: "100%" }}
                                 color="primary"
-                                id="filled-basic"
+                                id="outlined-basic"
                                 label="Team One"
                                 placeholder="Team One"
-                                variant="filled"
+                                variant="outlined"
                                 type="text"
                                 name="teamOne"
                                 value={formik.values.teamOne}
@@ -198,10 +198,10 @@ function Login() {
                         <Item>
                             <TextField sx={{ width: "100%" }}
                                 color="primary"
-                                id="filled-basic"
+                                id="outlined-basic"
                                 label="Score"
                                 placeholder="Score"
-                                variant="filled"
+                                variant="outlined"
                                 type="text"
                                 name="teamOneScore"
                                 value={formik.values.teamOneScore}
@@ -215,10 +215,10 @@ function Login() {
                         <Item>
                             <TextField sx={{ width: "30%" }}
                                 color="primary"
-                                id="filled-basic"
+                                id="outlined-basic"
                                 label="wickets"
                                 placeholder="wickets"
-                                variant="filled"
+                                variant="outlined"
                                 type="text"
                                 name="teamOneWicket"
                                 value={formik.values.teamOneWicket}
@@ -232,10 +232,10 @@ function Login() {
                         <Item>
                             <TextField sx={{ width: "100%" }}
                                 color="primary"
-                                id="filled-basic"
+                                id="outlined-basic"
                                 label="Team Two"
                                 placeholder="Team Two"
-                                variant="filled"
+                                variant="outlined"
                                 type="text"
                                 name="teamTwo"
                                 value={formik.values.teamTwo}
@@ -249,10 +249,10 @@ function Login() {
                         <Item>
                             <TextField sx={{ width: "100%" }}
                                 color="primary"
-                                id="filled-basic"
+                                id="outlined-basic"
                                 label="Score"
                                 placeholder="Score"
-                                variant="filled"
+                                variant="outlined"
                                 type="text"
                                 name="teamTwoScore"
                                 value={formik.values.teamTwoScore}
@@ -267,16 +267,16 @@ function Login() {
 
                             <TextField sx={{ width: "100%" }}
                                 color="primary"
-                                id="filled-basic"
+                                id="outlined-basic"
                                 label="wickets"
                                 placeholder="wickets"
-                                variant="filled"
+                                variant="outlined"
                                 type="text"
-                                name="teamTwoWickets"
-                                value={formik.values.teamTwoWickets}
+                                name="teamTwoWicket"
+                                value={formik.values.teamTwoWicket}
                                 onChange={formik.handleChange}
-                                error={formik.touched.teamTwoWickets && Boolean(formik.errors.teamTwoWickets)}
-                                helperText={formik.touched.teamTwoWickets && formik.errors.teamTwoWickets}
+                                error={formik.touched.teamTwoWicket && Boolean(formik.errors.teamTwoWicket)}
+                                helperText={formik.touched.teamTwoWicket && formik.errors.teamTwoWicket}
                             />
                         </Item>
                     </Grid>
@@ -288,10 +288,10 @@ function Login() {
                         <Item>
                             <TextField sx={{ width: "100%" }}
                                 color="primary"
-                                id="filled-basic"
+                                id="outlined-basic"
                                 label="overs"
                                 placeholder="overs"
-                                variant="filled"
+                                variant="outlined"
                                 type="text"
                                 name="teamOneOvers"
                                 value={formik.values.teamOneOvers}
@@ -309,10 +309,10 @@ function Login() {
                         <Item>
                             <TextField sx={{ width: "100%" }}
                                 color="primary"
-                                id="filled-basic"
+                                id="outlined-basic"
                                 label="overs"
                                 placeholder="overs"
-                                variant="filled"
+                                variant="outlined"
                                 type="text"
                                 name="teamTwoOvers"
                                 value={formik.values.teamTwoOvers}
@@ -326,10 +326,10 @@ function Login() {
                         <Item>
                             <TextField sx={{ width: "50%" }}
                                 color="primary"
-                                id="filled-basic"
+                                id="outlined-basic"
                                 label="batsman 01"
                                 placeholder="batsman 01"
-                                variant="filled"
+                                variant="outlined"
                                 type="text"
                                 name="player1"
                                 value={formik.values.player1}
@@ -343,10 +343,10 @@ function Login() {
                         <Item>
                             <TextField sx={{ width: "100%" }}
                                 color="primary"
-                                id="filled-basic"
+                                id="outlined-basic"
                                 label="bowler 01"
                                 placeholder="bowler 01"
-                                variant="filled"
+                                variant="outlined"
                                 type="text"
                                 name="bowler1"
                                 value={formik.values.bowler1}
@@ -360,10 +360,10 @@ function Login() {
                         <Item>
                             <TextField sx={{ width: "50%" }}
                                 color="primary"
-                                id="filled-basic"
+                                id="outlined-basic"
                                 label="batsman 02"
                                 placeholder="batsman 02"
-                                variant="filled"
+                                variant="outlined"
                                 type="text"
                                 name="player2"
                                 value={formik.values.player2}
@@ -377,10 +377,10 @@ function Login() {
                         <Item>
                             <TextField sx={{ width: "100%" }}
                                 color="primary"
-                                id="filled-basic"
+                                id="outlined-basic"
                                 label="bowler 02"
                                 placeholder="bowler 02"
-                                variant="filled"
+                                variant="outlined"
                                 type="text"
                                 name="bowler2"
                                 value={formik.values.bowler2}
@@ -395,10 +395,10 @@ function Login() {
                             <center>
                                 <TextField sx={{ width: "60%" }}
                                     color="primary"
-                                    id="filled-basic"
+                                    id="outlined-basic"
                                     label="toss"
                                     placeholder="toss"
-                                    variant="filled"
+                                    variant="outlined"
                                     type="text"
                                     name="toss"
                                     value={formik.values.toss}
@@ -413,10 +413,10 @@ function Login() {
                             <center>
                                 <TextField sx={{ width: "40%" }}
                                     color="primary"
-                                    id="filled-basic"
+                                    id="outlined-basic"
                                     label="headline"
                                     placeholder="headline"
-                                    variant="filled"
+                                    variant="outlined"
                                     type="text"
                                     name="headline"
                                     value={formik.values.headline}
